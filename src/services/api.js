@@ -36,8 +36,8 @@ export const login = async (correo, contraseña, codigo2FA) => {
   return fetchAPI("/auth/login", {
     method: "POST",
     body: JSON.stringify({
-      correo,       // Se envía como 'correo'
-      contraseña,   // Se envía como 'contraseña'
+      email: correo,        // El backend espera la clave 'email'
+      password: contraseña, // El backend espera la clave 'password'
       codigo2FA,
     }),
   });
