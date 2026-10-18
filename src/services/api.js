@@ -31,12 +31,13 @@ async function fetchAPI(endpoint, options = {}) {
 }
 
 // Auth
+// Auth
 export const login = async (correo, contraseña, codigo2FA) => {
   return fetchAPI("/auth/login", {
     method: "POST",
     body: JSON.stringify({
-      email: correo,
-      password: contraseña,
+      correo,       // Se envía como 'correo'
+      contraseña,   // Se envía como 'contraseña'
       codigo2FA,
     }),
   });
