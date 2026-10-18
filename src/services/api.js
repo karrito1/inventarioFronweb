@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://inventario-p078.onrender.com";
+const API_BASE_URL = "https://inventario-p078.onrender.com/api";
 
 async function fetchAPI(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;
