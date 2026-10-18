@@ -117,7 +117,7 @@ const LoginPage = () => {
                 placeholder="••••••••"
                 required
               />
-
+{/*
               <Input
                 label="Código 2FA"
                 type="text"
@@ -129,7 +129,7 @@ const LoginPage = () => {
                 maxLength={6}
                 required
               />
-
+  */}
               <Button
                 type="submit"
                 variant="primary"
